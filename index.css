@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+h1{
+    color: rgb(220, 250, 255);
+    font-family: 'Futura';
+    font-style: normal;
+    font-stretch: condensed;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -1px;
+    margin: 5px 10px;
+}
+body{
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* background-image: url("assets/deep-learning-medicine-miccai.jpg"); */
+    background-color: #264750;
+    padding: 0;
+    margin: 0;
+    display: block;
+    /* overflow: hidden; */
+}
+img{
+    /* left: 5px; */
+    width:100%;
+
+}
+.container{
+    /* margin: 10px; */
+    /* display: flex; */
+    justify-content: center;
+    display: grid;
+    /* margin-left: 5%; */
+    width: 100%;
+    /* height: 460px; */
+    padding: 0;
+    background-color: rgba(255,0,0,0);
+    text-align: center;
+}
+.grid{
+    touch-action: none;
+    max-width: 440px;
+    min-width: 440px;
+    /* max-height: 440px;
+    min-height: 440px; */
+    border-radius: 6px;
+    /* position: relative; */
+    /* top: -4px; */
+    left: 10%;
+    margin: 10px;
+    padding: 15px;
+    background-color: #81aeac;
+    /* width: 590px; */
+    text-align: center;
+    /* height: 480px; */
+    display: inline-block;
+    grid-column: 1;
+}
+.menu{
+    grid-column: 2;
+    text-align: center;
+    position: relative;
+    border-radius: 6px;
+    margin: 10px;
+    padding: 0;
+    display: inline-block;
+    background-color: #81aeac;
+    width: 280px;
+    height: 100%;
+    max-height: 478px;
+}
+.row{
+    /* display: inline; */
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+.elem{
+    margin: 0px 1px;
+    padding: 0;
+    display: inline-block;
+    background-color: rgb(192, 228, 255);
+    width: 52px;
+    height: 52px;
+}
+.elem:hover{
+    background-color: black;
+}
+.clicked{
+    background-color: rgb(22, 38, 42);
+}
+
+@media (max-width : 880px) {
+    .container{
+        display: block;
+    }
+}
+
+@media (max-width : 530px) {
+    .grid{
+        max-width: 324px;
+        min-width: 324px;
+    }
+    .elem{
+        width: 38px;
+        height: 38px;
+    }
+}
+@media (max-width : 400px) {
+    .grid{
+        max-width: 280px;
+        min-width: 280px;
+    }
+    .elem{
+        width: 32px;
+        height: 32px;
+    }
+}
+@media (max-width : 340px) {
+    .grid{
+        max-width: 256px;
+        min-width: 256px;
+    }
+    .elem{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+
+
+
+/* CSS */
+button {
+    /* margin-top: auto; */
+    margin-bottom: 20px;
+    /* position: absolute; */
+    /* left: auto; */
+    /* bottom: 200px; */
+
+    
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  /* vertical-align: baseline; */
+  /* width: auto; */
+}
+
+button:hover,
+button:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+button:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
